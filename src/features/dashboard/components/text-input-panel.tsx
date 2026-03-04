@@ -24,6 +24,21 @@ export function TextInputPanel() {
             <div className="rounded-[20px] bg-[#f9f9f9] p-1">
                 <div className="space-y-4 rounded-2xl bg-white p-4 drop-shadow-xs">
                     <Textarea placeholder="Start typing or paste your text here..." className="min-h-35 resize-none border-0 bg-transparent p-0 shadow-none focus-visible:ring-0" value={text} onChange={(e) => setText(e.target.value)} maxLength={TEXT_MAX_LENGTH}/>
+ 
+                    {/* BOTTOM INFO */}
+                    <div className="flex items-center justify-between">
+                        <Badge variant="outline" className="gap-1.5 border-dashed">
+                            <Coins className="size-3 text-chart-5"/>
+                            <span className="text-xs"> { text.length === 0 ? ("Start typing to estimate") : ( <> <span className="tabular-nums"> ${(text.length * 0.0003).toFixed(4)} </span>{" "}estimated</> ) } </span>
+                        </Badge>
+                        <span className="text-xs text-muted-foreground">{text.length.toLocaleString()} / { TEXT_MAX_LENGTH.toLocaleString() } characters</span>
+                    </div>
+                </div>
+
+                {/* ACTION BAR */}
+
+                <div className="flex items-center justify-end p-3">
+                    <Button size="sm" disabled={!text.trim()} onClick={handleGenerate} className="w-full lg:w-auto">Generate speech</Button>
                 </div>
             </div>
         </div>
