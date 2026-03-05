@@ -26,10 +26,8 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-        <html lang="en">
-          className={`${inter.variable} ${geistMono.variable} antialiased`}
-          <body
-          >
+        <html lang="en" className={`${inter.variable} ${geistMono.variable} antialiased`}>
+          <body>
             {children}
             <Toaster />
           </body>
