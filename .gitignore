@@ -40,8 +40,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# clerk configuration (can include secrets)
-/.clerk/
-
-/scripts/system-voices
-/src/generated/prisma
+# Sentry Config File
+.env.sentry-build-plugin
