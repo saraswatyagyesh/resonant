@@ -2,30 +2,20 @@ import { withSentryConfig } from "@sentry/nextjs";
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  async headers() {
-    return [
-      {
-        source: "/:path*",
-        headers: [
-          { 
-            key: "Cross-Origin-Embedder-Policy", value: "credentialless"
-          },
-          { 
-            key: "Cross-Origin-Opener-Policy", value: "same-origin"
-          },
-        ],
-      }
-    ];
-  }
+  /* config options here */
+  devIndicators: false,
+  experimental: {
+    proxyClientMaxBodySize: "20mb",
+  },
 };
 
 export default withSentryConfig(nextConfig, {
   // For all available options, see:
   // https://www.npmjs.com/package/@sentry/webpack-plugin#options
 
-  org: "john-doe-fb",
+  org: "enra-doo-jn",
 
-  project: "polaris",
+  project: "resonance-app",
 
   // Only print logs for uploading source maps in CI
   silent: !process.env.CI,
@@ -54,5 +44,5 @@ export default withSentryConfig(nextConfig, {
       // Automatically tree-shake Sentry logger statements to reduce bundle size
       removeDebugLogging: true,
     },
-  }
+  },
 });

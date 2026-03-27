@@ -1,261 +1,228 @@
-# Polaris - Build a Cursor AI Alternative
+<div align="center">
 
-This is the repository for a comprehensive [YouTube tutorial series](https://youtu.be/Xf9rHPNBMyQ) where we build a **fully-featured cloud IDE** from scratch.
+<img src="https://33uee5uclf.ufs.sh/f/fa600f97-6cf2-4759-8641-3093d13591bf-6rrk6b.png" alt="Resonance" width="720" />
 
-[![Watch the Tutorial](https://img.shields.io/badge/YouTube-Watch%20Tutorial-red?style=for-the-badge&logo=youtube)](https://youtu.be/Xf9rHPNBMyQ)
+<br />
+<br />
 
-> **Note:** This is **Part 1 of 2** of the tutorial series. The codebase is functional but incomplete - Part 2 will add the AI Agent, WebContainer preview, and GitHub integration.
+<h1>Resonance</h1>
 
-## What We're Building
+<p>The open-source ElevenLabs alternative.</p>
 
-Polaris is a browser-based IDE inspired by Cursor AI, featuring:
+<p>AI-powered text-to-speech and voice cloning built with Next.js 16, React 19, and Chatterbox TTS.</p>
 
-- Real-time collaborative code editing
-- AI-powered code suggestions and quick edit (Cmd+K)
-- Conversation-based AI assistant
-- In-browser code execution with WebContainer
-- GitHub import/export integration
-- Multi-file project management
+<br />
 
-## Tech Stack
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/SioRb1?referralCode=ANTONIO&utm_medium=integration&utm_source=template&utm_campaign=generic)
 
-| Category      | Technologies                                                |
-| ------------- | ----------------------------------------------------------- |
-| **Frontend**  | Next.js 16, React 19, TypeScript, Tailwind CSS 4            |
-| **Editor**    | CodeMirror 6, Custom Extensions, One Dark Theme             |
-| **Backend**   | Convex (Real-time DB), Inngest (Background Jobs)            |
-| **AI**        | Claude Sonnet 4 (preferred) or Gemini 2.0 Flash (free tier) |
-| **Auth**      | Clerk (with GitHub OAuth)                                   |
-| **Execution** | WebContainer API, xterm.js                                  |
-| **UI**        | shadcn/ui, Radix UI                                         |
+<br />
 
-## Part 1 Contents (Chapters 1-12)
+<p>
+  <a href="https://cwa.run/clerk"><img src="https://img.shields.io/badge/Clerk-6C47FF?style=for-the-badge&logo=clerk&logoColor=white" alt="Clerk" /></a>&nbsp;
+  <a href="https://cwa.run/polar"><img src="https://img.shields.io/badge/Polar-000000?style=for-the-badge&logo=polar&logoColor=white" alt="Polar" /></a>&nbsp;
+  <a href="https://cwa.run/railway"><img src="https://img.shields.io/badge/Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white" alt="Railway" /></a>&nbsp;
+  <a href="https://cwa.run/sentry"><img src="https://img.shields.io/badge/Sentry-362D59?style=for-the-badge&logo=sentry&logoColor=white" alt="Sentry" /></a>&nbsp;
+  <a href="https://cwa.run/coderabbit"><img src="https://img.shields.io/badge/CodeRabbit-FF6C37?style=for-the-badge&logo=rabbitmq&logoColor=white" alt="CodeRabbit" /></a>&nbsp;
+  <a href="https://cwa.run/prisma"><img src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white" alt="Prisma" /></a>
+</p>
 
-### Phase 1: Foundation & Sponsor Technologies
+</div>
 
-- **Chapter 1:** Project Setup, UI Library & Theme
-- **Chapter 2:** Clerk Authentication & Protected Routes
-- **Chapter 3:** Convex Database & Real-time Setup
-- **Chapter 4:** Inngest - Background Jobs & Non-Blocking UI
-- **Chapter 5:** Firecrawl - Teaching AI with Live Documentation
-- **Chapter 6:** Sentry - Error Tracking & LLM Monitoring
-- **Chapter 7:** Projects Dashboard & Landing Page
+<br />
 
-### Phase 2: File System & Editor
+## Tutorial
 
-- **Chapter 8:** Project IDE Layout & Resizable Panes
-- **Chapter 9:** File Explorer - Full Implementation
-- **Chapter 10:** Code Editor & State Management
+[![Watch on YouTube](https://img.shields.io/badge/Watch_the_Full_Course-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://cwa.run/resonance-gh-yt)
 
-### Phase 3: AI Features (Partial)
+Learn how to build this entire project from scratch in a **free 12-hour video course** on YouTube. The tutorial covers every feature  - authentication, text-to-speech, voice cloning, billing, deployment, and more.
 
-- **Chapter 11:** AI Suggestions & Quick Edit
-- **Chapter 12:** Conversation System
+Each chapter has a matching branch so you can check out the code at any point in the tutorial:
 
-## Part 2 Contents (Chapters 13-16) - Coming Soon
+| Branch | Chapter |
+|--------|---------|
+| `main` | Final project (all chapters combined) |
+| `02-dashboard` | Dashboard layout and navigation |
+| `03-text-to-speech-ui` | Text-to-speech UI |
+| `04-backend-infrastructure` | Backend infrastructure (tRPC, R2, Prisma) |
+| `05-voice-selection` | Voice selection and library |
+| `06-tts-generation-audio-player` | TTS generation and audio player |
+| `07-tts-history-polish` | TTS history and polish |
+| `bonus-sentry-error-monitoring` | Bonus: Sentry error monitoring |
+| `08-voice-management` | Voice management and cloning |
+| `09-billing` | Billing and usage metering |
 
-- **Chapter 13:** AI Agent & Tools (AgentKit, file management tools)
-- **Chapter 14:** WebContainer, Terminal & Preview
-- **Chapter 15:** GitHub Import & Export
-- **Chapter 16:** AI Project Creation & Final Polish
+```bash
+git checkout 04-backend-infrastructure  # example: jump to Chapter 4
+```
+
+## Features
+
+- **Text-to-Speech**  - Generate speech from text with adjustable creativity, variety, expression, and flow parameters
+- **Zero-Shot Voice Cloning**  - Upload or record a voice sample (10s minimum) and clone it instantly  - no fine-tuning required
+- **20 Built-in Voices**  - Pre-seeded system voices across 12 categories and 5 locales
+- **Waveform Audio Player**  - WaveSurfer.js visualization with seek, play/pause, and download
+- **Multi-Tenant**  - Team-based access via Clerk Organizations with full data isolation
+- **Usage-Based Billing**  - Pay-as-you-go character metering with configurable pricing via Polar products and meters
+- **Generation History**  - Browse and replay past generations with preserved voice metadata
+- **Fully Responsive**  - Mobile-first with bottom drawers, compact controls, and adaptive layouts
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js 20.09+
-- npm or pnpm
-- Accounts needed:
-  - [Clerk](https://cwa.run/clerk) - Authentication
-  - [Convex](https://cwa.run/convex) - Database
-  - [Inngest](https://cwa.run/inngest) - Background jobs
-  - [Anthropic](https://anthropic.com) or [Google AI Studio](https://aistudio.google.com) - AI API (one required)
-  - [Firecrawl](https://cwa.run/firecrawl) - Web scraping (optional)
-  - [Sentry](https://cwa.run/sentry) - Error tracking (optional)
+- Node.js **20.9** or later
+- [Prisma Postgres](https://cwa.run/prisma) database
+- [Clerk](https://cwa.run/clerk) account (with Organizations enabled)
+- [Cloudflare R2](https://cwa.run/cloudflare-r2) bucket
+- [Modal](https://cwa.run/modal) account (for GPU-hosted TTS)
+- [Polar](https://cwa.run/polar) account (for billing)
 
-### Installation
+### 1. Clone and install
 
-1. Clone the repository:
+```bash
+git clone https://github.com/code-with-antonio/resonance.git
+cd resonance
+npm install
+```
 
-   ```bash
-   git clone https://github.com/code-with-antonio/polaris.git
-   cd polaris
-   ```
+### 2. Configure environment
 
-2. Install dependencies:
+```bash
+cp .env.example .env
+```
 
-   ```bash
-   npm install
-   ```
+Fill in the blank values in `.env`. Sensible defaults (Clerk routes, Polar meter names, `APP_URL`, etc.) are pre-filled.
 
-3. Set up environment variables:
+### 3. Set up Polar billing
 
-   ```bash
-   cp .env.example .env.local
-   ```
+In your [Polar](https://cwa.run/polar) dashboard, create two **meters** under **Meters**:
 
-4. Configure your `.env.local` with the required keys:
+1. **Voice Creation** meter
+   - Filter: Name equals `voice_creation`
+   - Aggregation: **Count**
 
-   ```env
-   # Clerk
-   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-   CLERK_SECRET_KEY=
+2. **Text-to-Speech Characters** meter
+   - Filter: Name equals `tts_generation`
+   - Aggregation: **Sum** over `characters`
 
-   # Convex
-   NEXT_PUBLIC_CONVEX_URL=
-   CONVEX_DEPLOYMENT=
-   POLARIS_CONVEX_INTERNAL_KEY=  # Generate a random string
+Then create a new **product** with **Recurring subscription** pricing. Under **Price Type**, add two metered prices:
 
-   # AI Provider (choose one)
-   ANTHROPIC_API_KEY=        # Preferred - Claude Sonnet 4
-   GOOGLE_GENERATIVE_AI_API_KEY=  # Free alternative - Gemini 2.0 Flash
+1. Click **Add metered price** and select the **Text-to-Speech Characters** meter
+   - Set the **Amount per unit** (price per character, e.g. `$0.003`)
+   - Optionally set a **Cap amount** (e.g. `$100`)
 
-   # Firecrawl (optional)
-   FIRECRAWL_API_KEY=
+2. Click **Add metered price** again and select the **Voice Creation** meter
+   - Set the **Amount per unit** (price per voice generation, e.g. `$0.25`)
+   - Optionally set a **Cap amount** (e.g. `$100`)
 
-   # Sentry (optional)
-   SENTRY_DSN=
-   ```
+With only metered prices, the subscription starts at **$0/month** and scales with usage. If you want a baseline subscription fee (e.g. $20/month), add a third price to the same product — select a **fixed price** instead of a metered price. This requires no code changes since fixed prices are handled entirely by Polar.
 
-5. Start the Convex development server:
+Ensure **Allow multiple subscriptions** is turned **off** under **Settings > Billing** (this is the Polar default).
 
-   ```bash
-   npx convex dev
-   ```
+Copy the product ID into `POLAR_PRODUCT_ID`. The meter filter names and aggregation property must match the `POLAR_METER_*` env variables.
 
-6. In a new terminal, start the Next.js development server:
+### 4. Set up the database
 
-   ```bash
-   npm run dev
-   ```
+```bash
+npx prisma migrate deploy
+```
 
-7. In another terminal, start the Inngest dev server:
+### 5. Deploy the TTS engine
 
-   ```bash
-   npx inngest-cli@latest dev
-   ```
+The included `chatterbox_tts.py` is adapted from [Modal's official Chatterbox TTS example](https://cwa.run/modal-tts), modified to read voice reference audio directly from your R2 bucket instead of a Modal Volume.
 
-8. Open [http://localhost:3000](http://localhost:3000)
+Before deploying, update `chatterbox_tts.py` with your R2 credentials:
+
+```python
+R2_BUCKET_NAME = "<your-r2-bucket-name-here>"
+R2_ACCOUNT_ID = "<your-r2-account-id-here>"
+```
+
+Then create the required secrets in your [Modal dashboard](https://cwa.run/modal-secrets):
+
+| Secret Name | Keys | Description |
+|-------------|------|-------------|
+| `cloudflare-r2` | `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY` | R2 API credentials (used for bucket mount) |
+| `chatterbox-api-key` | `CHATTERBOX_API_KEY` | API key to protect the endpoint (use any strong random string) |
+| `hf-token` | `HF_TOKEN` | Hugging Face token (for downloading the Chatterbox model weights) |
+
+Deploy to Modal:
+
+```bash
+modal deploy chatterbox_tts.py
+```
+
+This deploys Chatterbox TTS to a serverless NVIDIA A10G GPU on Modal. The container mounts your R2 bucket read-only for direct access to voice reference audio. Use the resulting Modal URL as `CHATTERBOX_API_URL` in your `.env.local`.
+
+> **Note:** The first request after a period of inactivity may take longer due to cold starts as Modal provisions the GPU container.
+
+Once deployed, generate the type-safe Chatterbox client from the OpenAPI spec:
+
+```bash
+npm run sync-api
+```
+
+### 6. Seed voices
+
+```bash
+npx prisma db seed
+```
+
+Seeds 20 built-in voices to the database and R2. The system voice WAV files are included in the repository and originate from [Modal's voice sample pack](https://modal-cdn.com/blog/audio/chatterbox-tts-voices.zip).
+
+### 7. Run
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000).
+
+## Self-Hosting
+
+Resonance is designed to be self-hosted. You'll need:
+
+1. **A PostgreSQL database**  - [Prisma Postgres](https://cwa.run/prisma) (recommended), or any managed Postgres
+2. **Cloudflare R2**  - For audio storage (S3-compatible, generous free tier)
+3. **Modal**  - For serverless GPU inference (pay-per-second billing)
+4. **Clerk**  - For authentication and multi-tenancy
+5. **Polar**  - For metered billing (use sandbox mode with card `4242 4242 4242 4242` for testing)
+
+Deploy the Next.js app to any Node.js host (Railway, Docker, etc.).
 
 ## Project Structure
 
 ```
 src/
-├── app/                    # Next.js App Router
-│   ├── api/               # API routes
-│   │   ├── messages/      # Conversation API
-│   │   ├── suggestion/    # AI suggestions
-│   │   └── quick-edit/    # Cmd+K editing
-│   └── projects/          # Project pages
-├── components/            # Shared components
-│   ├── ui/               # shadcn/ui components
-│   └── ai-elements/      # AI conversation components
+├── app/                        # Next.js App Router
+│   ├── (dashboard)/            # Protected routes (home, TTS, voices)
+│   ├── api/                    # Audio proxy routes + tRPC handler
+│   ├── sign-in/                # Clerk auth pages
+│   └── sign-up/
+├── components/                 # Shared UI components (shadcn/ui + custom)
 ├── features/
-│   ├── auth/             # Authentication
-│   ├── conversations/    # AI chat system
-│   ├── editor/           # CodeMirror setup
-│   │   └── extensions/   # Custom extensions
-│   ├── preview/          # WebContainer (Part 2)
-│   └── projects/         # Project management
-├── inngest/              # Inngest client
-└── lib/                  # Utilities
-
-convex/
-├── schema.ts             # Database schema
-├── projects.ts           # Project queries/mutations
-├── files.ts              # File operations
-├── conversations.ts      # Conversation operations
-└── system.ts             # Internal API for Inngest
+│   ├── dashboard/              # Home page, quick actions
+│   ├── text-to-speech/         # TTS form, audio player, settings, history
+│   ├── voices/                 # Voice library, creation, recording
+│   └── billing/                # Usage display, checkout
+├── hooks/                      # App-wide hooks
+├── lib/                        # Core: db, r2, polar, env, chatterbox client
+├── trpc/                       # tRPC routers, client, server helpers
+├── generated/                  # Prisma client
+└── types/                      # Generated API types
 ```
-
-## Features Implemented (Part 1)
-
-### Editor
-
-- Syntax highlighting for JS, TS, CSS, HTML, JSON, Markdown, Python
-- Line numbers and code folding
-- Minimap overview
-- Bracket matching and indentation guides
-- Multi-cursor editing
-
-### AI Features
-
-- Real-time code suggestions with ghost text
-- Quick edit with Cmd+K (select code + natural language instruction)
-- Selection tooltip for quick actions
-- Conversation sidebar with message history
-
-### File Management
-
-- File explorer with folder hierarchy
-- Create, rename, delete files and folders
-- VSCode-style file icons
-- Tab-based file navigation
-- Auto-save with debouncing
-
-### Real-time
-
-- Convex-powered instant updates
-- Optimistic UI updates
-- Background job processing with Inngest
-
-## Current Limitations (Part 1)
-
-These features are planned for Part 2:
-
-- AI agent cannot yet modify files (mock response only)
-- No message cancellation
-- No past conversations dialog
-- No code preview/execution
-- No GitHub integration
-- No AI project generation
 
 ## Scripts
 
-```bash
-npm run dev       # Start development server
-npm run build     # Build for production
-npm run start     # Start production server
-npm run lint      # Run ESLint
-```
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start dev server |
+| `npm run build` | Production build |
+| `npm run start` | Start production server |
+| `npm run lint` | Lint with ESLint |
+| `npm run sync-api` | Regenerate Chatterbox API types from OpenAPI spec |
 
-## Tutorial Links
+## Acknowledgements
 
-- **YouTube Playlist:** [Coming Soon]
-- **Part 1:** Chapters 1-12
-- **Part 2:** Chapters 13-16
-
-## Sponsors
-
-A huge thank you to the sponsors who made this tutorial possible. Consider checking them out - they offer generous free tiers perfect for learning!
-
-### Authentication
-
-**[Clerk](https://cwa.run/clerk)** - Add authentication to your app in minutes, not days.
-
-### Database
-
-**[Convex](https://cwa.run/convex)** - The real-time database that makes building collaborative apps a breeze.
-
-### Background Jobs
-
-**[Inngest](https://cwa.run/inngest)** - Reliable background jobs and event-driven workflows.
-
-### Web Scraping
-
-**[Firecrawl](https://cwa.run/firecrawl)** - Turn any website into LLM-ready data.
-
-### Error Tracking
-
-**[Sentry](https://cwa.run/sentry)** - See what's broken and fix it fast.
-
-### Code Review
-
-**[CodeRabbit](https://cwa.run/coderabbit)** - AI-powered code reviews that catch bugs before your users do.
-
-## Acknowledgments
-
-- [Cursor](https://cursor.sh) - Inspiration for the project
-- [Orchids](https://orchids.app) - Inspiration for the project
-- [shadcn/ui](https://ui.shadcn.com) - UI components
-- [CodeMirror](https://codemirror.net) - Code editor
+- [Chatterbox TTS](https://github.com/resemble-ai/chatterbox) by Resemble AI - the open-source zero-shot voice cloning model powering speech generation
+- [Modal](https://cwa.run/modal-tts) - serverless GPU deployment example and [voice sample pack](https://modal-cdn.com/blog/audio/chatterbox-tts-voices.zip)
