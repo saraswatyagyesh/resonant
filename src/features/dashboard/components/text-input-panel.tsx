@@ -6,7 +6,7 @@ import { Coins } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
-import { TEXT_MAX_LENGTH } from "@/features/text-to-speech/data/constants";
+import { TEXT_MAX_LENGTH, COST_PER_UNIT } from "@/features/text-to-speech/data/constants";
 
 export function TextInputPanel() {
     const [text, setText] = useState("");
@@ -30,7 +30,7 @@ export function TextInputPanel() {
                         <Coins className="size-3 text-chart-5" />
                         <span className="text-xs">{text.length === 0 ? ("start typing to estimate") : (
                             <>
-                                <span className="tabular-nums">${(text.length * 0.0003).toFixed(4)}</span>{" "}estimated
+                                <span className="tabular-nums">${(text.length * COST_PER_UNIT).toFixed(4)}</span>{" "}estimated
                             </>
                         )}</span>
                     </Badge>
