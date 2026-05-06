@@ -36,9 +36,9 @@ The backend system relies on Next.js App Router and tRPC for orchestration, Post
 
 ![Backend Architecture Diagram](public/githubResources/Resonant.png)
 
-![Auth Workflow](public/githubResources/AuthWorkflow.png)
+![Auth Workflow](public/githubResources/Auth_Workflow.png)
 
 ![API request lifecycle](public/githubResources/API_request_lifecycle.png)
 
-![External API integration](public/githubResources/ExternalAPIintegration.png)
+![External API integration](public/githubResources/External_API_integration.png)
 
