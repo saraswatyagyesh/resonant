@@ -34,4 +34,11 @@ You can also record audio directly from your browser to create a voice clone ins
 
 The backend system relies on Next.js App Router and tRPC for orchestration, PostgreSQL (via Prisma) for relational data, Cloudflare R2 for highly scalable audio blob storage, and Modal for serverless GPU inference of the TTS engine.
 
-![Backend Architecture Diagram](public/githubResources/img/Screenshot%20from%202026-04-30%2016-31-08.png)
+![Backend Architecture Diagram](public/githubResources/Resonant.png)
+
+![Auth Workflow](public/githubResources/AuthWorkflow.png)
+
+![API request lifecycle](public/githubResources/APIrequestLifecycle.png)
+
+![External API integration](public/githubResources/ExternalAPIintegration.png)
+
